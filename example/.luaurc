@@ -1,0 +1,13 @@
+{
+  "_ezpk_alias": [
+    "frktest_path",
+    "frktest_copy",
+    "frktest_git"
+  ],
+  "aliases": {
+    "custom_alias": "hi",
+    "frktest_copy": "_ezpk_data/frktest_copy/src",
+    "frktest_git": "_ezpk_data/frktest_git/src",
+    "frktest_path": "/Users/frk/dev/frktest/src"
+  }
+}
