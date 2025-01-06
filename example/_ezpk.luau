@@ -1,25 +1,20 @@
+
 return {
-    run = {
-        build = function()
-            print("hello world")
-        end,
-        test = function()
-            print("hello world")
-        end,
-    },
     actions = {
-        pre_switch = function(_) end,
-        post_switch = function(_) end,
-        pre_fetch_each = function(_) end,
-        post_fetch_each = function(_) end,
+        post_switch = builtin.luaurc,
     },
     deps = {
-        frktest = {
-            git = { "itsfrank/frktst", rev = "main" },
-            actions = {
-                pre_fetch = function() end,
-                post_fetch = function() end,
-            },
+        frktest_git = {
+            git = { "https://github.com/itsfrank/frktest", rev = "main" },
+            _luaurc = { append_alias = "src" },
+        },
+        frktest_path = {
+            path = { "~/dev/frktest" },
+            _luaurc = { append_alias = "src" },
+        },
+        frktest_copy = {
+            path = { "~/dev/frktest", copy = true },
+            _luaurc = { append_alias = "src" },
         },
     },
 }

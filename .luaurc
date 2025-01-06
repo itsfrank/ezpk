@@ -1,0 +1,14 @@
+{
+  "_ezpk_alias": [
+    "frkcli"
+  ],
+  "aliases": {
+    "frkcli": "_ezpk_data/frkcli/src",
+    "frktest": "../frktest/src",
+    "src": "./src"
+  },
+  "languageMode": "strict",
+  "lint": {
+    "*": true
+  }
+}
