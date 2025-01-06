@@ -1,4 +1,6 @@
--- optional, typecheck your config!
+-- should be the same contents at the adjacent types.luau
+return {
+    luau = [[
 local ezpk_types = require("./_ezpk_data/types")
 local builtin: ezpk_types.Builtin = _G.builtin
 
@@ -6,11 +8,8 @@ local config: ezpk_types.Config = {
     actions = {
         post_switch = builtin.luaurc,
     },
-    deps = {
-        frkcli = {
-            git = { "https://github.com/itsfrank/frkcli" },
-            _luaurc = { append_alias = "src" },
-        },
-    },
+    deps = {},
 }
 return config
+]],
+}

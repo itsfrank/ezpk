@@ -1,3 +1,5 @@
+-- should be the same contents as ../types.luau
+return [[
 export type GitDep = {
     [number]: string,
     rev: string?,
@@ -33,3 +35,4 @@ export type Builtin = {
     luaurc: (config: Config, manifest: Manifest) -> (),
 }
 return {}
+]]

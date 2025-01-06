@@ -1,5 +1,8 @@
+-- optional, typecheck your config!
+local ezpk_types = require("./_ezpk_data/types")
+local builtin: ezpk_types.Builtin = _G.builtin
 
-return {
+local config: ezpk_types.Config = {
     actions = {
         post_switch = builtin.luaurc,
     },
@@ -18,3 +21,5 @@ return {
         },
     },
 }
+
+return config
