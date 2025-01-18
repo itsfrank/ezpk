@@ -3,7 +3,7 @@
     "frkcli"
   ],
   "aliases": {
-    "frkcli": "_ezpk_data/frkcli/src",
+    "frkcli": "./_ezpk_data/frkcli/src",
     "frktest": "../frktest/src",
     "src": "./src"
   },

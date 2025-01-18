@@ -3,7 +3,7 @@ local frktest = require("@frktest/init")
 local test = frktest.test
 local check = frktest.assert.check
 
-local path = require("@src/util/path")
+local path = require("@src/util").path
 
 return function()
     test.suite("utils > path.join", function()

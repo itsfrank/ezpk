@@ -1,7 +1,7 @@
 local fs = require("@lune/fs")
 local serde = require("@lune/serde")
 
-local u_path = require("../util/path")
+local u = require("../util")
 
 local types = require("../types")
 
@@ -40,7 +40,7 @@ function m_luaurc.append_aliases(config: types.Config, manifest: types.Manifest)
         local path = data.root_dir
         local dep_config: any = config.deps[name]
         if dep_config and dep_config._luaurc and dep_config._luaurc.append_alias then
-            path = u_path.join(path, dep_config._luaurc.append_alias)
+            path = u.path.join(path, dep_config._luaurc.append_alias)
         end
         luaurc.aliases[name] = path
         table.insert(luaurc._ezpk_alias, name)

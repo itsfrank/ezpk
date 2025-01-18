@@ -1,0 +1,10 @@
+{
+  "_ezpk_alias": [
+    "sub",
+    "add"
+  ],
+  "aliases": {
+    "add": "./_ezpk_data/add",
+    "sub": "./_ezpk_data/sub"
+  }
+}

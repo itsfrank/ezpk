@@ -1,8 +1,8 @@
 local fs = require("@lune/fs")
 local process = require("@lune/process")
 
-local u_path = require("./util/path")
-local u_fs = require("./util/fs")
+local u = require("./util")
+local ul = require("./util/lune")
 
 local m_git = {}
 
@@ -41,8 +41,8 @@ function m_git.clone(
     end
 
     if opts.del_history then
-        local dot_git = u_path.join(dir, ".git")
-        u_fs.rm(dot_git)
+        local dot_git = u.path.join(dir, ".git")
+        ul.fs.rm(dot_git)
     end
 
     return nil

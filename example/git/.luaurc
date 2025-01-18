@@ -1,0 +1,9 @@
+{
+  "_ezpk_alias": [
+    "ezpk"
+  ],
+  "aliases": {
+    "custom_alias": "hi",
+    "ezpk": "./_ezpk_data/ezpk"
+  }
+}
