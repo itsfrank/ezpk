@@ -101,3 +101,14 @@ dependencies, I will document more about ezpk later, but for now, the
 
 - this project: [_ezpk.luau](./_ezpk.luau)
 - frkcli: [_ezpk.luau](https://github.com/itsfrank/frkcli/blob/main/_ezpk.luau)
+
+## How do I use it?
+
+Honestly, you should probably not (yet) but if you really want to...
+
+1. Install [Lune](https://github.com/lune-org/lune)
+2. Clone ezpk somehwere
+3. (optional) make an alias `alias ezpk="lune run /abs/path/to/ezpk/src/main.luau --"`
+4. in the ezpk source folder, run `ezpk bootstrap`
+
+You should then be good to go!
